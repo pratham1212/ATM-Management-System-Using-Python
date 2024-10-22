@@ -1,86 +1,55 @@
-ATM Management System Using Python
+ATM Management System
 Overview
-This ATM Management System allows users to perform basic banking operations such as logging in, checking their balance, depositing money, withdrawing cash, and viewing transaction history. The application is built using Python and SimpleGUICS2Pygame, providing a simple graphical user interface (GUI) for interaction.
+This ATM Management System is a simple Python application that simulates basic ATM functionalities such as account login, checking balance, depositing money, withdrawing cash, and viewing transaction history. The system uses Object-Oriented Programming (OOP) concepts, including encapsulation and abstraction, to enhance security and maintainability.
 
 Features
-Secure login using account number and PIN.
-Check account balance.
-Deposit money into the account.
-Withdraw money from the account.
-View transaction history.
-User-friendly interface.
-Prerequisites
-To run this project, you need to have Python and the SimpleGUICS2Pygame library installed. You can install SimpleGUICS2Pygame using pip:
+Login: Users can log in using their account number and PIN.
+Check Balance: Users can view their current account balance.
+Deposit: Users can deposit money into their account.
+Withdraw: Users can withdraw money from their account.
+Transaction History: Users can view a history of their transactions.
+Technologies Used
+Python
+SimpleGUICS2Pygame (for the GUI)
+OOP Concepts Implemented
+Encapsulation: Sensitive data (like account numbers and PINs) is kept private within the class, preventing unauthorized access. This ensures that only the ATM class methods can interact with the data.
+Abstraction: The user interacts with simple methods (like deposit and withdraw) without needing to understand the underlying complexity of how the data is managed.
 
+
+Installation
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/pratham1212/ATM-Management-System-Using-Python
+Navigate to the project directory:
+bash
+Copy code
+cd ATM-Management-System-Using-Python
+Install the necessary library (if not already installed):
 bash
 Copy code
 pip install SimpleGUICS2Pygame
-Getting Started
-Clone the Repository Download the project to your local machine using the following command:
-
-bash
-Copy code
-git clone https://github.com/pratham1212/ATM-Management-System-Using-Python.git
-cd ATM-Management-System-Using-Python
-Run the Application Open your terminal or command prompt and run the main Python file:
-
-bash
-Copy code
-python ATM Management System Using Python.py
-Replace ATM Management System Using Python.py  with the name of your Python script.
-
-How to Use the ATM System
-Login
-
-Enter your account number (e.g., 101) and PIN (e.g., 1234).
-If the login is successful, you will see a welcome message and the main menu.
-Example Output:
-
-rust
-Copy code
-Login successful for account 101.
-Menu Options Once logged in, you will see the menu options:
-
-Check Balance: Displays the current balance in your account.
-Deposit: Enter the amount you want to deposit.
-Withdraw: Enter the amount you want to withdraw.
-View History: Shows the history of your transactions.
-Exit: Logs you out and returns to the login screen.
-Check Balance Click the "Check Balance" button to view your current balance.
-
-Example Output:
 
 
-Copy code
-Balance: 5000
-Deposit Enter the amount you wish to deposit and click the "Deposit" button. The system will update your balance and log the transaction.
-
-Example Output:
-
-
-Copy code
-Deposited 1000. New Balance: 6000
-Withdraw Enter the amount you wish to withdraw and click the "Withdraw" button. If you have sufficient funds, the system will deduct the amount and update your balance.
-
-Example Output:
-
-
-Copy code
-Withdrew 500. New Balance: 5500
-View Transaction History Click the "View History" button to see a list of your recent transactions.
-
-Example Output:
-
-
-Copy code
-Deposited: 1000
-Withdrew: 500
-Exit Click the "Exit" button to log out. The application will display the login screen again.
-
-Example Output:
-
-typescript
-Copy code
-Please login with your account number and PIN.
+How to Use
+Run the Program: Execute the script to open the ATM GUI.
+Login: Enter your account number and PIN.
+If the login is successful, you will see the main menu.
+If the login fails, you will receive an error message.
+ATM Menu:
+Check Balance: Click the button to view your current balance.
+Deposit: Enter the amount you wish to deposit and click the deposit button. You will see a confirmation message with your new balance.
+Withdraw: Enter the amount you wish to withdraw and click the withdraw button. If the amount is available, the system will deduct it from your balance; otherwise, you will see an error message.
+View History: Click the button to see a history of your transactions.
+Exit: Click to exit the program, and your account summary will be displayed.
+Outputs
+Login Success: "Login successful for account {acc_number}."
+Login Failure: "Incorrect PIN. Please try again."
+Balance Check: "Balance: {balance}"
+Deposit Confirmation: "Deposited {amount}. New Balance: {new_balance}"
+Withdrawal Confirmation: "Withdrew {amount}. New Balance: {new_balance}"
+Insufficient Funds: "Insufficient balance."
+Invalid Amount: "Invalid amount."
+Transaction History: A list of all transactions for the account or "No transactions found."
 Conclusion
-This project serves as a practical example of using Python to build a simple banking application. The ATM Management System demonstrates object-oriented programming concepts and user interaction through a GUI.
+This ATM Management System is a practical example of how to implement OOP principles to create a secure and user-friendly application. By using encapsulation and abstraction, the system ensures that sensitive information is protected and that users can interact with the system easily.
