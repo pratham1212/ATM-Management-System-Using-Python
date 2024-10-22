@@ -16,21 +16,6 @@ Encapsulation: Sensitive data (like account numbers and PINs) is kept private wi
 Abstraction: The user interacts with simple methods (like deposit and withdraw) without needing to understand the underlying complexity of how the data is managed.
 
 
-Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/pratham1212/ATM-Management-System-Using-Python
-Navigate to the project directory:
-bash
-Copy code
-cd ATM-Management-System-Using-Python
-Install the necessary library (if not already installed):
-bash
-Copy code
-pip install SimpleGUICS2Pygame
-
-
 How to Use
 Run the Program: Execute the script to open the ATM GUI.
 Login: Enter your account number and PIN.
